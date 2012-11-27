@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Jordi Brau" />
+
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+
+    <!--[if Internet Explorer]>
+    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.lightbox-0.5.css" media="screen" />
+    
+  	<title>Brau | Home</title>
+    
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="../js/input_clear.js"></script>
+    
+    <!-- Lightbox -->
+    <script type="text/javascript">
+    $(function() {
+        $('.latest_gallery a').lightBox();
+    });
+    </script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(1000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+</head>
+
+<body id="home">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="../img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li><a class="transition" href="../ca/index.html">Catal&agrave;</a></li>
+        <li><a class="transition" href="../es/index.html">Castellano</a></li>
+        <li class="current"><a class="transition" href="../en/index.html">English</a></li>
+</ul>
+
+<a title="Brau" href="index.html"><img alt="Brau" class="logo" src="../img/logo.png" /></a>
+
+</div>
+
+<!-- Top Content -->
+<div class="main_content">
+<div id="top_content">
+    
+<div class="main_img">
+
+    <img alt="..." src="../img/main.png" />
+    
+</div> 
+
+</div>
+
+<!-- How to Contact Us, What we do -->
+
+<div id="info">
+
+    <div class="info_item">
+        <h3>Welcome</h3>
+        <p>Late in the day they passed through the capricious channels of Hong Kong, and the Tankadere, impelled by favourable winds, conducted herself admirably. "I do not need, pilot," said Phileas Fogg, when they got into the open sea, "to advise you to use all possible speed." "Trust me, your honour. We are carrying all the sail the wind will let us. The poles would add nothing, and are only used when we are going into port.""Its your trade, not mine, pilot, and I confide in you."</p>
+        <p>Phileas Fogg, with body erect and legs wide apart, standing like a sailor, gazed without staggering at the swelling waters. The young woman, who was seated aft, was profoundly affected as she looked out upon the ocean, darkening now with the twilight, on which she had ventured in so frail a vessel. Above her head rustled the white sails, which seemed like great white wings. The boat, carried forward by the wind, seemed to be flying in the air.</p>
+    </div>
+    
+</div>
+
+<!-- Social -->
+
+<div id="social">
+    
+    <div class="follow_team">
+        <h3>Our Team</h3>
+        <div class="team_preview">
+            <div><a><img src="../img/team/home/1.png" title="Team" alt="Member"/></a><br />
+                 <span>One</span>
+            </div>
+            
+            <div><a><img src="../img/team/home/2.png" title="Team" alt="Member"/></a><br />
+                 <span>Two</span>
+            </div>
+            
+            <div ><a><img src="../img/team/home/3.png" title="Team" alt="Member"/></a><br />
+                  <span>Three</span>
+            </div>
+            
+            <div class="last_img"><a><img src="../img/team/home/4.png" title="Team" alt="Member"/></a><br />
+                  <span>Four</span>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <div class="subscription">
+        <h3>Contact</h3>
+        <p>You can get in touch with us using the email address that is shown below (requires JavaScript):</p>
+        <p><SCRIPT TYPE="text/javascript">
+        <!-- // Protected Email Script by Joe Maller (http://joemaller.com)
+        emailE='brau.cat'
+        emailE=('dot' + '@' + emailE)
+        document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+        //-->
+        </script></p>
+        
+    </div>
+    
+</div>
+
+<div id="footer">
+    &copy; Brau 2012
+    
+    <ul class="footer_navi">
+        <li><a class="transition" href="../ca/index.html">Catal&agrave;</a></li>
+        <li><a class="transition" href="../es/index.html">Castellano</a></li>
+        <li class="current"><a class="transition" href="../en/index.html">English</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
