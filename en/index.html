@@ -1,165 +1,192 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Jordi Brau" />
-
-    <link rel="icon" href="../img/favicon.png" type="image/png" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-
-    <!--[if Internet Explorer]>
-    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <title>Brau</title>
+    <!-- Meta Info -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Brau" />
+    <meta name="description" content="Brau">
+    <meta name="author" content="Jordi Brau">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/boostrap_responsive.css">
+    <!-- Font Awesome Styles (Icons)-->
+    <link rel="stylesheet" href="css/font_awesome.css">
+    <!-- Main Template styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
     <![endif]-->
-    
-    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery.lightbox-0.5.css" media="screen" />
-    
-  	<title>Brau | Home</title>
-    
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/jquery.lightbox-0.5.js"></script>
-    <script type="text/javascript" src="../js/input_clear.js"></script>
-    
-    <!-- Lightbox -->
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/switcher.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <!-- Modernizr Script -->
+    <script src="js/modernizr.custom.26633.js"></script>
+    <!-- Google Analytics -->
     <script type="text/javascript">
-    $(function() {
-        $('.latest_gallery a').lightBox();
-    });
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35042941-1']);
+        _gaq.push(['_trackPageview']);    
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
     </script>
-    
-    <!-- Loading -->
-    <script type="text/javascript">
-    $(function() { 
-    $('.main_content, .main_navi').hide(); 
-    $(window).load( function() {  
-    $('#loader').fadeOut();
-    $('.main_content, .main_navi').fadeIn(2000); 
-    } );
-    } );
-                        
-    $(document).ready(function() {
-    $("body").css("display", "none");
-
-    $("body").fadeIn(1000);
-
-	$("a.transition").click(function(event){
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(1000, redirectPage);
-	});
-
-	function redirectPage() {
-		window.location = linkLocation;
-	}
-    });
-    </script>
-    
 </head>
-
-<body id="home">
-<div id="container">
-
-    <div class="stripe"></div>
-
-<div id="content">
-
-<!-- Header -->
-
-<div id="header">
-
-<div id="loader"><img alt="Loading.." src="../img/ajax-loader.gif" /></div>
-
-<ul class="main_navi">
-        <li><a class="transition" href="../ca/index.html">Catal&agrave;</a></li>
-        <li><a class="transition" href="../es/index.html">Castellano</a></li>
-        <li class="current"><a class="transition" href="../en/index.html">English</a></li>
-</ul>
-
-<a title="Brau" href="index.html"><img alt="Brau" class="logo" src="../img/logo.png" /></a>
-
-</div>
-
-<!-- Top Content -->
-<div class="main_content">
-<div id="top_content">
-    
-<div class="main_img">
-
-    <img alt="..." src="../img/main.png" />
-    
-</div> 
-
-</div>
-
-<!-- How to Contact Us, What we do -->
-
-<div id="info">
-
-    <div class="info_item">
-        <h3>Welcome</h3>
-        <p>Late in the day they passed through the capricious channels of Hong Kong, and the Tankadere, impelled by favourable winds, conducted herself admirably. "I do not need, pilot," said Phileas Fogg, when they got into the open sea, "to advise you to use all possible speed." "Trust me, your honour. We are carrying all the sail the wind will let us. The poles would add nothing, and are only used when we are going into port.""Its your trade, not mine, pilot, and I confide in you."</p>
-        <p>Phileas Fogg, with body erect and legs wide apart, standing like a sailor, gazed without staggering at the swelling waters. The young woman, who was seated aft, was profoundly affected as she looked out upon the ocean, darkening now with the twilight, on which she had ventured in so frail a vessel. Above her head rustled the white sails, which seemed like great white wings. The boat, carried forward by the wind, seemed to be flying in the air.</p>
-    </div>
-    
-</div>
-
-<!-- Social -->
-
-<div id="social">
-    
-    <div class="follow_team">
-        <h3>Our Team</h3>
-        <div class="team_preview">
-            <div><a><img src="../img/team/home/1.png" title="Team" alt="Member"/></a><br />
-                 <span>One</span>
+<body>
+    <header class='main'>
+        <div class="container">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt="Brau" title="Brau Logo" /></a>
+            <div class="row">
+                <div class="span8">
+                    <div class="flexnav-menu-button" id="flexnav-menu-button">Menu</div>
+                    <nav>
+                        <ul class="nav nav-pills flexnav" id="flexnav" data-breakpoint="800">
+                            <li><a href="../index.html">Home</a> </li>
+                            <li><a href="../ca/index.html">Català</a> </li>
+                            <li><a href="../es/index.html">Castellano</a> </li>
+                            <li class="active"><a href="../en/index.html">English</a> </li>
+                            <li><a href="../de/index.html">Deutsch</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="span4">
+                    <ul class="nav-social">
+                        <li>
+                            <a class="icon-github" href="http://github.com/brau/" data-toggle="tooltip" title="GitHub"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
-            <div><a><img src="../img/team/home/2.png" title="Team" alt="Member"/></a><br />
-                 <span>Two</span>
-            </div>
-            
-            <div ><a><img src="../img/team/home/3.png" title="Team" alt="Member"/></a><br />
-                  <span>Three</span>
-            </div>
-            
-            <div class="last_img"><a><img src="../img/team/home/4.png" title="Team" alt="Member"/></a><br />
-                  <span>Four</span>
-            </div>
-            
         </div>
+    </header>
 
+    <div class="top-area">
+        <div class="slider-wrapper theme-default">
+            <div id="nivo-slider" class="nivoSlider">
+                <img src="img/a.png" alt="Image Alternative text" title="#nivo-caption-1" data-thumb="240" />
+                <img src="img/b.png" alt="Image Alternative text" title="#nivo-caption-2" data-thumb="237" />
+                <img src="img/c.png" alt="Image Alternative text" title="#nivo-caption-3" data-thumb="304" />
+                <img src="img/d.png" alt="Image Alternative text" title="#nivo-caption-4" data-thumb="293" />
+            </div>
+            <div id="nivo-caption-1" class="nivo-html-caption">Benvingut</div>
+            <div id="nivo-caption-2" class="nivo-html-caption">Bienvenido</div>
+            <div id="nivo-caption-3" class="nivo-html-caption">Welcome</div>
+            <div id="nivo-caption-4" class="nivo-html-caption">Willkommen</div>
+        </div>
     </div>
-    
-    <div class="subscription">
-        <h3>Contact</h3>
-        <p>You can get in touch with us using the email address that is shown below (requires JavaScript):</p>
-        <p><SCRIPT TYPE="text/javascript">
-        <!-- // Protected Email Script by Joe Maller (http://joemaller.com)
-        emailE='brau.cat'
-        emailE=('dot' + '@' + emailE)
-        document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
-        //-->
-        </script></p>
-        
+
+    <div class="container">
+        <div class="gap gap-small"></div>
+            <div class="row row-wrap">
+                <div class="span3">
+                    <div class="service-thumb service-thumb-center">
+                        <a class="icon-cloud service-icon service-icon-big service-icon-black service-icon-border animate-icon-wobble" href="#"></a>
+                        <div class="inner">
+                            <h4 class="title">One</h4>
+                            <p class="desciption">One unforgettable dream, saved in the bottom of the memory in order to become true</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="service-thumb service-thumb-center">
+                        <a class="icon-suitcase service-icon service-icon-big service-icon-black service-icon-border animate-icon-wobble" href="#"></a>
+                        <div class="inner">
+                            <h4 class="title">Two</h4>
+                            <p class="desciption">Two places through which passes the road to a dream that seemed long forgotten</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="service-thumb service-thumb-center">
+                        <a class="icon-asterisk service-icon service-icon-big service-icon-black service-icon-border animate-icon-wobble" href="#"></a>
+                        <div class="inner">
+                            <h4 class="title">Three</h4>
+                            <p class="desciption">Three adventures spread along an infinite route between two dreamy places</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="service-thumb service-thumb-center">
+                        <a class="icon-calendar service-icon service-icon-big service-icon-black service-icon-border animate-icon-wobble" href="#"></a>
+                        <div class="inner">
+                            <h4 class="title">Four</h4>
+                            <p class="desciption">Four unforgettable days of adventure in thousands of places, in search of a lost dream</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-    
-</div>
 
-<div id="footer">
-    &copy; Brau 2012
-    
-    <ul class="footer_navi">
-        <li><a class="transition" href="../ca/index.html">Catal&agrave;</a></li>
-        <li><a class="transition" href="../es/index.html">Castellano</a></li>
-        <li class="current"><a class="transition" href="../en/index.html">English</a></li>
-    </ul>
+    <div class="box box-color box-inner-hor">
+        <div class="container center">
+            <span class="text-big"><i>"Carpe Diem" &nbsp; &mdash; &nbsp; Quintus Horatius Flaccus</i></span>
+        </div>
+    </div>
 
-</div>
+    <script language="JavaScript">
+    <!--
+        function myMail(cUser, cHost) {
+        cE = cUser + "@";
+        for (i = 0; i < cHost.length - 1; i++) { cE = cE + cHost[i] + "."; }
+        cE = cE + cHost[cHost.length - 1] ;
+        document.writeln("<a href='mailto:" + cE + "'>" + cE + "</a>");
+    }
+    -->
+    </script>
 
-</div>
-</div>
-</div>
+    <footer class="main">
+        <div class="container">
+            <div class="gap gap-small"></div>
+            <div class="row">
+                <div class="span2">
+                    <a class="logo" href="index.html">
+                        <img src="img/logo.png" alt="Brau" title="Brau Logo" />
+                    </a>
+                </div>
+                <div class="span8">
+                    <ul class="nav-footer">
+                        <li><a href="../ca/index.html">Català</a> </li>
+                        <li><a href="../es/index.html">Castellano</a> </li>
+                        <li><a href="../en/index.html">English</a> </li>
+                        <li><a href="../de/index.html">Deutsch</a> </li>
+                    </ul>
+                    <small>© Copyright 2013 <a href="index.html">Brau</a>. All Rights Reserved.</small>
+                </div>
+                <div class="span2">
+                <ul class="nav-contact">
+                    <li><i class="icon-map-marker"></i>&nbsp; Barcelona</li>
+                    <li><i class="icon-envelope"></i><script language="JavaScript"> myMail("&nbsp; dot", ["brau","cat"]); </script> </li>
+                </ul>
+            </div>
+            </div>
+            <div class="gap gap-small"></div>
+        </div>
+    </footer>
+    <!-- Scripts queries -->
+    <script src="js/jquery.js"></script>
+    <script src="js/boostrap.min.js"></script>
+    <script src="js/flexnav.min.js"></script>
+    <script src="js/gridrotator.min.js"></script>
+    <script src="js/magnific.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/wilto_slider.min.js"></script>
+    <script src="js/tweet.min.js"></script>
+    <script src="js/nivo_slider.min.js"></script>
+    <script src="js/elastic.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/mediaelement.min.js"></script>
+    <script src="js/fitvids.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/custom.js"></script>
+    <script src="js/switcher.js"></script>
 </body>
 </html>
